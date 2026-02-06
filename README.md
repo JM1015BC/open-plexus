@@ -3,7 +3,10 @@
 
 # Open Plexus
 
-- This is a community project whose aim is to make the MIPS Hole wiki real.
+- This is what i have wanted to make ever since b3313 first came out
+- I (the owner of the repo) want it so that anyone can add new areas or levels or events (ill get to that) to the game.
+- I also have absolutely no coding experiance beyond html5+css, block coding, and vibe coding, which, figures, doesn't work. So that isnt good i dont think
+- Anyway the game should open as literally base sm64, but have slight changes that occur randomly like maybe the frames around paintings changing colors or corridors getting slightly longer (god i sound like ai) until you reach 70 stars, at which point the game drastically opens up and a new area opens up. I want the castle to have many "mount points" where randomly a door can just appear and take the player to a point in the plexus. There is more I want to go over but Ill probably write more later
 
 This repo does not include all assets necessary for compiling the game.
 A prior copy of the game is required to extract the assets.
