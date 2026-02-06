@@ -1,4 +1,5 @@
 ![THE PLEXUS MUST NOT BE CLOSED SOURCE.](deltaprophecy-animation.gif)
+![Logo](logo.png)
 
 # Super Mario 64 Port
 
