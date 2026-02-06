@@ -1,11 +1,9 @@
 ![THE PLEXUS MUST NOT BE CLOSED SOURCE.](deltaprophecy-animation.gif)
 ![Logo](logo.png)
 
-# Super Mario 64 Port
+# Open Plexus
 
-- This repo contains a full decompilation of Super Mario 64 (J), (U), (E), and (SH).
-- Naming and documentation of the source code and data structures are in progress.
-- Beyond Nintendo 64, it can also target Linux and Windows natively.
+- This is a community project that is aimed to make the MIPS Hole wiki real.
 
 This repo does not include all assets necessary for compiling the game.
 A prior copy of the game is required to extract the assets.
