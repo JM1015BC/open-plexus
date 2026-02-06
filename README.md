@@ -3,7 +3,7 @@
 
 # Open Plexus
 
-- This is a community project that is aimed to make the MIPS Hole wiki real.
+- This is a community project whose aim is to make the MIPS Hole wiki real.
 
 This repo does not include all assets necessary for compiling the game.
 A prior copy of the game is required to extract the assets.
