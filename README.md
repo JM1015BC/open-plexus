@@ -1,7 +1,7 @@
 ![THE PLEXUS MUST NOT BE CLOSED SOURCE.](deltaprophecy-animation.gif)
 ![Logo](logo.png)
 
-# Open Plexus
+# Open Plexus (i need help boss 🙏)
 
 - This is what i have wanted ever since b3313 first came out
 - I (the owner of the repo) want it so that anyone can add new areas or levels or events (ill get to that) to the game.
