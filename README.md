@@ -1,13 +1,24 @@
 ![THE PLEXUS MUST NOT BE CLOSED SOURCE.](deltaprophecy-animation.gif)
 ![Logo](logo.png)
 
-# Open Plexus (i need help boss 🙏)
+# Open Plexus
 
-- This is what i have wanted ever since b3313 first came out
-- I (the owner of the repo) want it so that anyone can add new areas or levels or events (ill get to that) to the game.
-- I also have absolutely no coding experiance beyond html5+css, block coding, and vibe coding, which, figures, doesn't work. So that isnt good i dont think
-- Anyway the game should open as literally base sm64, but have slight changes that occur randomly like maybe the frames around paintings changing colors or corridors getting slightly longer (god i sound like ai) until you reach 70 stars, at which point the game drastically opens up and a new area opens up. I want the castle to have many "mount points" where randomly a door can just appear and take the player to a point in the plexus.
-- I dont want the random events to be very common as most of them would be permanent changes until the save file is cleared, like map changes. Paintings should not be tied to the area they are in, but rather the level they lead to. Each level should either choose from a selection of paintings from base sm64 or have their own paintings made for them.
+Open Plexus is a community-first *Super Mario 64* expansion project inspired by B3313.
+
+The goal is to keep the familiar "vanilla" SM64 opening while gradually introducing subtle, persistent world changes during a save file. Early changes are intended to be uncommon and atmospheric (for example, altered painting frames or shifted castle spaces). After major progression milestones (such as 70 stars), the castle should open up significantly with new areas and connections into the Plexus.
+
+This project is designed so contributors can add new levels, events, and world states over time. In the long term, castle "mount points" should allow dynamic doors and transitions, and painting destinations should be decoupled from their physical placement so one painting set can route to multiple possible levels.
+
+## Plexus framework (implemented baseline)
+
+A first-pass framework is now in place in `src/game/plexus_framework.c` to support the README design goals:
+
+- **Phase model:** Vanilla -> Drift -> Network Open progression.
+- **Persistent world shifts:** rare, save-backed drift events are stored as save flags.
+- **70-star gate:** the network-open phase is unlocked permanently at 70 stars.
+- **Extensible registries:** APIs for dynamic door mount points and painting routing tables.
+
+This scaffolding is intentionally conservative: it establishes persistent state management and extension points without forcing gameplay changes into every level script at once.
 
 This repo does not include all assets necessary for compiling the game.
 A prior copy of the game is required to extract the assets.

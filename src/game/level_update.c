@@ -19,6 +19,7 @@
 #include "ingame_menu.h"
 #include "obj_behaviors.h"
 #include "save_file.h"
+#include "plexus_framework.h"
 #include "debug_course.h"
 #ifdef VERSION_EU
 #include "memory.h"
@@ -985,6 +986,8 @@ s32 play_mode_normal(void) {
         gHudDisplay.timer += 1;
     }
 
+    plexus_framework_update();
+
     area_update_objects();
     update_hud_values();
 
@@ -1175,6 +1178,8 @@ s32 init_level(void) {
     }
 
     sTimerRunning = FALSE;
+
+    plexus_framework_on_level_init();
 
     if (sWarpDest.type != WARP_TYPE_NOT_WARPING) {
         if (sWarpDest.nodeId >= WARP_NODE_CREDITS_MIN) {
