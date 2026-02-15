@@ -1,0 +1,60 @@
+{
+  "pack": {
+    "id": "openplexus.core_starter",
+    "name": "Open Plexus Starter Pack",
+    "version": "0.1.0",
+    "author": "open-plexus",
+    "priority": 100
+  },
+  "mount_points": [
+    {
+      "id": "castle.lobby_hidden_door",
+      "castle_slot": "lobby_north_wall_slot_a",
+      "destination": {
+        "level": "LEVEL_CASTLE_GROUNDS",
+        "area": 1,
+        "warp_node": 16
+      },
+      "phase": "late",
+      "weight": 3,
+      "conditions": [
+        {
+          "min_stars": 70
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "event.frame_palette_shift.soft",
+      "type": "frame_palette_shift",
+      "phase": "early",
+      "weight": 1,
+      "once_per_save": true,
+      "payload": {
+        "palette": "warm",
+        "strength": 0.2
+      }
+    },
+    {
+      "id": "event.corridor_length_delta.minor",
+      "type": "corridor_length_delta",
+      "phase": "early",
+      "weight": 1,
+      "once_per_save": true,
+      "payload": {
+        "segment": "castle_hall_1f",
+        "delta": 1
+      }
+    }
+  ],
+  "paintings": [
+    {
+      "id": "painting.bob_entry",
+      "target_level": "LEVEL_BOB",
+      "visual_pool": ["painting_bob", "painting_jrb", "painting_ssl"],
+      "phase": "any",
+      "weight": 1
+    }
+  ]
+}
